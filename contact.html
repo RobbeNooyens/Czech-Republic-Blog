@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>Roadtrip Tsjechië Blog</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="opmaak.css">
+		<script>
+			function checkfoto(fotonr) {
+				var radiotarget = document.getElementById(fotonr);
+				radiotarget.checked = true;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="webpage">
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="fotos.html">FOTO'S</a></li>
+				<li><a href="route.html">ROUTE</a></li>
+				<li><a href="contact.html" id="currentpage">CONTACT</a></li>
+			</ul>
+		</nav>
+		<header>
+			<h1>Roadtrip Tsjechië</h1>
+			<p>Robbe en Sander</p>
+		</header>
+		<div id="container">
+			<div class="d1"></div>
+			<div id="content">
+				<h3>Verzend een postkaartje!</h3>
+				<hr>
+				<p>Opgelet! Postkaartjes worden niet meer verstuurd, aangezien de roadtrip erop zit. Scroll naar beneden voor mailtjes ivm vragen over Tsjechië of over onze vakantie.</p>
+				<form class="postkaart-form" action="postkaartform.php" method="post">
+					<table>
+						<tr>
+							<td><img src="afbeeldingen/postkaart1.jpg" alt="Afbeelding kan niet worden geladen." onclick="javascript:checkfoto('postkaartfoto1');"><input type="radio" name="postkaartafbeelding" value="1" id="postkaartfoto1" checked></td>
+							<td><img src="afbeeldingen/postkaart2.jpg" alt="Afbeelding kan niet worden geladen." onclick="javascript:checkfoto('postkaartfoto2');"><input type="radio" name="postkaartafbeelding" value="2" id="postkaartfoto2"></td>
+						</tr>
+						<tr>
+							<td><img src="afbeeldingen/postkaart3.jpg" alt="Afbeelding kan niet worden geladen." onclick="javascript:checkfoto('postkaartfoto3');"><input type="radio" name="postkaartafbeelding" value="3" id="postkaartfoto3"></td>
+							<td><img src="afbeeldingen/postkaart4.jpg" alt="Afbeelding kan niet worden geladen." onclick="javascript:checkfoto('postkaartfoto4');"><input type="radio" name="postkaartafbeelding" value="4" id="postkaartfoto4"></td>
+						</tr>
+					</table>					
+					<textarea name="message" placeholder="Bericht*" required></textarea>
+					<br>
+					<button type="submit" name="submit">Verstuur</button>
+				</form>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h3>Stuur ons een bericht!</h3>
+				<hr>
+				<p>Heb je vragen of wil je tips voor je vakantie in Tsjechië? Dat kan hier! Vergeet zeker niet je naam in te vullen zodat we weten van wie het berichtje komt.</p>
+				<form class="contact-form" action="contactform.php" method="post">
+					<input type="text" name="name" placeholder="Naam*" required>
+					<input type="mail" name="mail" placeholder="E-mail">
+					<br>
+					<input type="subject" class="inputsubject" name="subject" placeholder="Onderwerp">
+					<br>
+					<textarea name="message" placeholder="Bericht*" required></textarea>
+					<br>
+					<button type="submit" name="submit">Verstuur</button>
+					<br>
+					<h6>* verplichte velden</h6>
+				</form>
+			</div>
+			<footer>
+				<p>© 2018 - Gemaakt door Robbe en Sander.</p>
+			</footer>
+		</div>
+		</div>
+	</body>
+</html>

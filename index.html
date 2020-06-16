@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>Roadtrip Tsjechië Blog</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="opmaak.css">
+		<script>
+			function nakijkenQuiz() {
+				var juist = "";
+				var quiz = document.forms.quiz;
+				var vraag1 = quiz.elements['vraag1'];
+				var vraag2 = quiz.elements['vraag2'];
+				var vraag3 = quiz.elements['vraag3'];
+				var vraag4 = quiz.elements['vraag4'];
+				var vraag5 = quiz.elements['vraag5'];
+				if(vraag1[2].checked) {
+					document.getElementById("antwoord1").innerHTML = "<br/>Juist.";
+				} else {
+					document.getElementById("antwoord1").innerHTML = "<br/>Fout, we hebben door een rivier gewandeld.";
+				}
+				if(vraag2[1].checked) {
+					document.getElementById("antwoord2").innerHTML = "<br/>Juist.";
+				} else {
+					document.getElementById("antwoord2").innerHTML = "<br/>Fout, we zijn 2 nachten in Harrachov blijven slapen.";
+				}
+				if(vraag3[0].checked) {
+					document.getElementById("antwoord3").innerHTML = "<br/>Juist.";
+				} else {
+					document.getElementById("antwoord3").innerHTML = "<br/>Fout, we hebben geen downhillrace gedaan. De bikes waren helaas allemaal verhuurd.";
+				}
+				if(vraag4[1].checked) {
+					document.getElementById("antwoord4").innerHTML = "<br/>Juist.";
+				} else {
+					document.getElementById("antwoord4").innerHTML = "<br/>Fout, we hebben cocktails gedronken.";
+				}
+				if(vraag5[1].checked) {
+					document.getElementById("antwoord5").innerHTML = "<br/>Juist.";
+				} else {
+					document.getElementById("antwoord5").innerHTML = "<br/>Fout, de zandsculptuur stelde een ruiter voor.";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="webpage">
+		<nav>
+			<ul>
+				<li><a href="index.html" id="currentpage">HOME</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="fotos.html">FOTO'S</a></li>
+				<li><a href="route.html">ROUTE</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+		<header>
+			<h1>Roadtrip Tsjechië</h1>
+			<p>Robbe en Sander</p>
+		</header>
+		<div id="container">
+			<div class="d1"></div>
+			<div id="content">
+				<h3 class="centreer">Welkom op deze blog!</h3>
+				<hr>
+				<p>Wij zijn op roadtrip in Tsjechië geweest en hebben gedurende onze reis elke dag een blogbericht gepost. Door technische problemen konden we de berichten van de eerste dagen pas later online zetten, maar nu staan ze allemaal op de blog. Er komt misschien ook nog een filmpje waarin al wat we gedaan hebben nog eens samen wordt gevat.</p>
+				<p>Op de "Blogpagina" staan al onze blogberichten met telkens een foto van die dag. Het grootste deel van de foto's vind je terug onder het tabblad "Foto's". De route die we hebben gevolgd, kan je in het onderdeel "Route" vinden. Als je nog vragen zou hebben en een mailtje wil sturen, kan dat bij "Contact". Het kan wel zijn dat we niet meer antwoorden, aangezien de roadtrip erop zit.</p>
+				<p>Hieronder vind je nog wat leuke vragen in quizvorm over onze vakantie!
+				<p>Veel surfplezier!<br>Robbe en Sander</p>
+				<div id="quizdiv">
+					<h3 class="centreer">Test je kennis over onze vakantie!</h3>
+					<hr>
+					<form id="quiz">
+						<p>1) Wat hebben we gedaan in Ilsenburg?</p>
+						<input type="radio" name="vraag1" id="A" checked> Met mountainbikes gereden<br>
+						<input type="radio" name="vraag1" id="B"> Kanovaren<br>
+						<input type="radio" name="vraag1" id="C"> Door een rivier gewandeld<br>
+						<input type="radio" name="vraag1" id="D"> Muurklimmen in een avonturenpark<br>
+						<div id="antwoord1" class="quizantwoord"></div>
+						<br>
+						<p>2) Waar zijn we de eerste keer 2 nachten blijven overnachten?</p>
+						<input type="radio" name="vraag2" id="A" checked> In Karlsbad<br>
+						<input type="radio" name="vraag2" id="B"> In Harrachov<br>
+						<input type="radio" name="vraag2" id="C"> In Praag<br>
+						<input type="radio" name="vraag2" id="D"> In Ilsenburg<br>
+						<div id="antwoord2" class="quizantwoord"></div>
+						<br>
+						<p>3) Wat hebben we NIET gedaan in Harrachov?</p>
+						<input type="radio" name="vraag3" id="A" checked> Downhillrace met mountainbikes.<br>
+						<input type="radio" name="vraag3" id="B"> Rodelbaan<br>
+						<input type="radio" name="vraag3" id="C"> Een touwenparkour<br>
+						<input type="radio" name="vraag3" id="D"> In een rivier gezwommen<br>
+						<div id="antwoord3" class="quizantwoord"></div>
+						<br>
+						<p>4) Wat hebben we gedronken op een terras in de oude stad van Praag?</p>
+						<input type="radio" name="vraag4" id="A" checked> Lokaal gemaakte Ice-Tea<br>
+						<input type="radio" name="vraag4" id="B"> Cocktails<br>
+						<input type="radio" name="vraag4" id="C"> Vers geperst vruchtensap<br>
+						<input type="radio" name="vraag4" id="D"> Milkshake<br>
+						<div id="antwoord4" class="quizantwoord"></div>
+						<br>
+						<p>5) Wat stelde de zandsculptuur in Karlsbad voor?</p>
+						<input type="radio" name="vraag5" id="A" checked> Een kasteel<br>
+						<input type="radio" name="vraag5" id="B"> Een ruiter<br>
+						<input type="radio" name="vraag5" id="C"> Een brug<br>
+						<input type="radio" name="vraag5" id="D"> Een oorlogstank<br>
+						<div id="antwoord5" class="quizantwoord"></div>
+						<br>
+						<input type="button" class="button" value="Nakijken" onclick="nakijkenQuiz()">
+					</form>
+				</div>
+			</div>
+			<footer>
+				<p>© 2018 - Gemaakt door Robbe en Sander.</p>
+			</footer>
+		</div>
+		</div>
+	</body>
+</html>

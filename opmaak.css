@@ -1,0 +1,312 @@
+body {
+	color: black;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	padding: 0;
+	background-color: #cce6ff;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+header {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; 
+	width: 100%;
+	color: #e6e6e6;
+	font-weight: bold;
+	background-color: #ffebe6;
+	background-image: url("afbeeldingen/headerimg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-family: "Bradley Hand", cursive;
+	display: inline-block;
+	padding-top: 50px;
+	margin-top: 0;
+}
+header h1 {
+	font-size: 100px;
+}
+header p {
+	font-size: 40px;
+}
+nav {
+	z-index: 1;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	margin: 0 auto;
+	padding: 0 auto;
+	border: 0;
+	height: 60px;
+}
+nav ul {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+    padding: 0;
+	display: inline-block;
+	overflow: hidden;
+}
+nav ul li {
+	list-style: none;
+	float: left;
+	width: 180px;
+	height: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+nav ul li a {
+	color: #004080;
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out, 1s transform ease-out;
+	background-color: white;
+	padding: 15px;
+}
+nav ul li a:hover {
+	background-color: #cce6ff;
+	transform: translatey(-5px);
+}
+#currentpage {
+	background-color: #cce6ff;
+}
+#container {
+	display: block;
+	position: absolute;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; 
+	width: 100%;
+}
+.d1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-clip-path: polygon(10% 0, 100% 0%, 92% 100%, 0% 100%);
+	clip-path: polygon(10% 0, 100% 0%, 92% 100%, 0% 100%);
+	background-color: #e6f5ff;
+	z-index: -1;
+}
+#content {
+	display: block;
+	width: 60%;
+	font-size: 27px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: justify;
+	padding-bottom: 200px;
+}
+#content .centreer {
+	text-align: center;
+}
+.contact-form {
+	position: relative;
+}
+.contact-form input, textarea {
+	font-size: 25px;
+	padding: 2px;
+	margin: 2px;
+	width: 100%;
+}
+.inputsubject {
+	width: 100%;
+}
+textarea {
+	resize: none;
+	width: 100%;
+	height: 200px;
+	
+}
+#quizdiv {
+	margin-top: 150px;
+}
+.quizantwoord {
+	font-style: italic;
+	color: #262626;
+}
+#map {
+	width: 100%;
+	display: block;
+}
+#quizdiv .button {
+    background-color: #336699;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+	cursor: pointer;
+}
+#quizdiv .button:hover {
+	background-color: #538cc6;
+}
+.blogdagzichtbaar {
+	display: block;
+}
+.blogdagonzichtbaar {
+	display: none;
+}
+.blogdagzichtbaar img {
+	width: 40%;
+	margin-right: 20px;
+}
+.blogdagzichtbaar a {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; 
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.blogdagzichtbaar a:hover {
+	color: grey;
+}
+.leesmeerzichtbaar {
+	display: block;
+}
+.leesmeeronzichtbaar {
+	display: none;
+}
+table {
+	display: block;
+	width: 100%;
+}
+.fotopagina table tr td {
+	width: 16%;
+}
+.fotopagina table img {
+	width: 100%;
+	cursor: pointer;
+}
+.modal {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; 
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 1%;
+	left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+	padding: 3px;
+    border: 1px solid #888;
+	height: auto;
+	width: 94%;
+	-webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+	padding-right: 2%;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#imgpopup img {
+	width: 63%;
+}
+footer {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; 
+	display: block;
+	position: static;
+	bottom: 0;
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	padding: 20px;
+	background-color: #336699;
+}
+
+/*
+	Contactform css
+*/
+.postkaart-form table {
+	width: 100%;
+}
+.postkaart-form table tr {
+	padding: 0;
+	margin-top: 0px;
+}
+.postkaart-form table tr td {
+	width: 50%;
+}
+.postkaart-form table tr td img{
+	width: 100%;
+	cursor: pointer;
+}
+.postkaart-form td input[type="radio"] {
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 10px;
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+}
+.containeroverlay {
+	position: relative;
+	width: 100%;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	opacity: 0;
+	transition: .3s ease;
+}
+.overlay img {
+	width: 100%;
+}
+.containeroverlay:hover .overlay {
+	opacity: 1;
+}
